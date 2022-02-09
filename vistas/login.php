@@ -12,6 +12,11 @@
    </div>   
    <div id="formulario">
       <form action="" method="POST" >
+         <?php
+            if(isset($errorLogin)){
+               echo $errorLogin;
+            }
+         ?>
          <h2>Welcome!</h2>
          <h3>Sign in in your Account</h3>
          <input type="text" name="username"  placeholder="Nombre de usuario"></p>

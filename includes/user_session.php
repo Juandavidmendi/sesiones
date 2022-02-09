@@ -9,7 +9,7 @@ class UserSession{
     }
 
     public function getCurrentUser(){
-        return  $_SESSION['user'];
+        return $_SESSION['user'];
     }
 
     public function closeSession(){
@@ -17,7 +17,6 @@ class UserSession{
         session_destroy();
     }
 }
-
 
 
 ?>
